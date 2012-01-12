@@ -22,7 +22,12 @@ margin : 0;
 width: 100%;
 
 }
+
 html {background : #ffffff url(../images/bg.jpg) repeat-x 50% 0 fixed;}
+
+body.cke_show_borders,
+.cke_panel_block,
+.cke_panel_listItem { background:#fff; }
 
 #page {
 	
@@ -2815,16 +2820,29 @@ left: -5000px;
 
 
 
-	#search-block-form input.form-submit, #search-form input.form-submit {
+.block-search input.form-submit, .block-search input.form-submit {
 border: medium none;
-height: 24px;
+height: 25px;
 padding: 0 3px;
-width: 78px;
+width: 88px;
 cursor: pointer;
 text-indent: -9999px;
 border: none;
 background: url(../images/search-go.gif) no-repeat left top;
 border-image: initial;
+}
+
+
+.block-search input {
+background: #FAFAFA;
+border: 1px solid #DDD;
+border-bottom-left-radius: 0.2em 0.2em;
+border-bottom-right-radius: 0.2em 0.2em;
+border-top-left-radius: 0.2em 0.2em;
+border-top-right-radius: 0.2em 0.2em;
+height: 22px;
+border-image: initial;
+width: 210px;
 }
 
 .section-node-edit .form-item, .form-actions {
@@ -2863,22 +2881,7 @@ background: #F6F6F6;
 border-color: #C5C5C5;
 }
 
-#block-search-form input
-{
-	background: #FAFAFA;
-border: 1px solid #DDD;
-border-bottom-left-radius: 0.2em 0.2em;
-border-bottom-right-radius: 0.2em 0.2em;
-border-top-left-radius: 0.2em 0.2em;
-border-top-right-radius: 0.2em 0.2em;
-height: 22px;
-}
-#search-block-form  input {
 
-font: normal normal bold 0.95em/normal arial, sans-serif;
-height: 20px;
-width: 200px;
-}
 
 #search-block-form {margin-top: 15px;}
 
@@ -2940,4 +2943,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 border-radius: 2% 2%;
 }
 
+.front .with-navigation #content, .front .with-navigation .region-sidebar-first, .front .with-navigation .region-sidebar-second {
+margin-top: none;
+}
+
+
+.front #content .section {
+margin: 0px;
+}
+
+.front #page-title
+{
+display: none;
+}
+
+
+
+#boxes-box-form .form-text, .form-textarea {
+width: 90%;
+}
+
+.column #boxes-box-form .form-item-description input, .column #boxes-box-form .form-item-title input
+{width: 300px;
+}
+
+#boxes-box-form .resizable-textarea {
+width: 98%;
+}
 
